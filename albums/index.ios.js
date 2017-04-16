@@ -16,7 +16,5 @@ const App = () => {
     );
 };
 
-//http://rallycoding.herokuapp.com/api/music_albums
-
 // Render it to the device
 AppRegistry.registerComponent('albums', () => App);
