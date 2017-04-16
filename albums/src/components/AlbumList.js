@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
-export const AlbumList = () => {
-  return (
-      <View>
-          <Text>AlbumList</Text>
-      </View>
-  );
-};
+export class AlbumList extends Component {
+    render() {
+        return (
+            <View>
+                <Text>AlbumList</Text>
+            </View>
+        );
+    }
+}
