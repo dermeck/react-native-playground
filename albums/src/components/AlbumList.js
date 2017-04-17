@@ -7,15 +7,17 @@ export class AlbumList extends Component {
     // default state
     state = { albums: []};
 
-    componentWillMount(){
-        axios.get('https://rallycoding.herokuapp.com/api/music_albums')
-            .then(response => this.setState({ albums: response.data}));
-    }
+  componentWillMount () {
+    axios.get('https://rallycoding.herokuapp.com/api/music_albums')
+      .then(response => this.setState({albums: response.data}))
+      .catch(() => console.log('moep'))
+  }
 
-    renderAlbums(){
-        return this.state.albums.map(album =>
-            <AlbumDetail key={album.title} album={album} />);
-    }
+  renderAlbums () {
+    return this.state.albums.map(album =>
+      <AlbumDetail key={album.title} album={album}/>)
+
+  }
 
     render() {
         console.log(this.state);
