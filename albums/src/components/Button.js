@@ -1,8 +1,36 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
 
 export default Button = () => {
+  const { buttonStyle, textStyle } = styles;
+
   return (
-    <Text>Click Me!</Text>
+
+    <TouchableOpacity style={ buttonStyle}>
+      <Text style={textStyle}>
+        Click Me!
+      </Text>
+    </TouchableOpacity>
   );
 };
+
+const styles = {
+  textStyle: {
+    alignSelf: 'center',
+    color: '#007aff',
+    fontSize: 16,
+    fontWeight: '600',
+    paddingTop: 10,
+    paddingBottom: 10
+  },
+  buttonStyle: {
+    flex: 1,
+    alignSelf: 'stretch',
+    backgroundColor: '#fff',
+    borderWidth: 1,
+    borderRadius: 5,
+    borderColor: '#007aff',
+    marginLeft: 5,
+    marginRight: 5
+  }
+}
