@@ -1,0 +1,8 @@
+export default config = {
+    apiKey: "...",
+    authDomain: "....firebaseapp.com",
+    databaseURL: "...",
+    projectId: "...",
+    storageBucket: "...",
+    messagingSenderId: "..."
+};
