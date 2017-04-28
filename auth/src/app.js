@@ -5,6 +5,18 @@ import { Header, Button, CardSection, Spinner } from './components/common';
 import config from './config/firebase';
 import LoginForm from './components/LoginForm'
 
+
+/**
+ * This app showcases:
+ *
+ *  configuration and authentication with firebase
+ *
+ *  handling of text input with component level state => controlled components
+ *
+ *  conditional rendering
+ *
+ *  user feedback (error message, spinner)
+ */
 export default class App extends Component {
     state = { loggedIn: null };
 
