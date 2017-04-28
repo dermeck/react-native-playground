@@ -26,14 +26,13 @@ export default class App extends Component {
             case true:
                 return (
                     <CardSection>
-                        <Button>
+                        <Button onPress={() => firebase.auth().signOut()}>
                             Log Out
                         </Button>
                     </CardSection>
                 );
             case false:
                 return <LoginForm/>;
-
             case null:
                 return <Spinner size="large"/>
         }
