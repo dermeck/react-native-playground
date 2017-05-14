@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 class LibraryList extends Component {
     render () {
+        console.log(this.props);
         return null;
     }
 }
@@ -11,7 +12,7 @@ class LibraryList extends Component {
 // provide part of it as props to the component
 const mapStateToProps = state => {
     console.log(state);
-    return {};
+    return { libraries: state.libraries};
 };
 
 // call connect => returns function => this returned function is called with LibraryList as parameter
