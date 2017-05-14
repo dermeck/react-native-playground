@@ -22,15 +22,6 @@ class LibraryList extends Component {
     }
 
     renderSectionHeader(sectionData, category) {
-        let food = [
-            {name: "Lettuce", category: "Vegetable"},
-        {name: "Apple", category: "Fruit"},
-        {name: "Orange", category: "Fruit"},
-        {name: "Potato", category: "Vegetable"}
-    ];
-        console.log(food);
-        // console.log(sectionData);
-        // console.log(category);
         return(
 
             <View>
