@@ -21,6 +21,8 @@ export class ListItem extends Component {
         const {titleStyle} = styles;
         const {id, title} = this.props.data;
 
+        console.log(this.props);
+
         return (
             <TouchableWithoutFeedback onPress={() => this.props.selectLibrary(id)}>
                 <View>
