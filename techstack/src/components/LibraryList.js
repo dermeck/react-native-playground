@@ -13,7 +13,6 @@ class LibraryList extends Component {
 
         //this.dataSource = ds.cloneWithRows(this.props.libraries);
         this.dataSource = ds.cloneWithRowsAndSections(this.getLibraryMap());
-        console.log(this.props.libraries);
 
     }
 
