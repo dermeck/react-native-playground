@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ListView, View, Text } from 'react-native';
-import { ListItem } from './ListItem';
+import ListItem from './ListItem';
 import { connect } from 'react-redux';
 
 class LibraryList extends Component {
