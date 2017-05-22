@@ -6,6 +6,13 @@ import reducers from'./reducers';
 import { Header } from './components/common';
 import LibraryList from './components/LibraryList';
 
+/**
+ * This app showcases:
+ *
+ * Usage of Redux with React Native
+ *
+ */
+
 const App = () => {
     return (
         <Provider store={createStore(reducers)}>
