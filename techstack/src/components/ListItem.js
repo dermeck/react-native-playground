@@ -18,11 +18,20 @@ export class ListItem extends Component {
     }
 
     render() {
+        const { selectedLibraryId } = this.props;
         const {titleStyle} = styles;
         const {id, title} = this.props.data;
 
         return (
-            <TouchableWithoutFeedback onPress={() => this.props.selectLibrary(id)}>
+            <TouchableWithoutFeedback onPress={
+                () => {
+                    if (id == selectedLibraryId) {
+                        this.props.selectLibrary(null)
+                    } else {
+                        this.props.selectLibrary(id)
+                    }
+                }
+            }>
                 <View>
                     <CardSection>
                         <Text style={ titleStyle }>
