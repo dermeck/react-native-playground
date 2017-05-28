@@ -61,4 +61,6 @@ const mapStateToProps = state => {
 };
 
 // call connect => returns function => this returned function is called with LibraryList as parameter
-export default connect(mapStateToProps)(LibraryList);
+const comp1 = connect(mapStateToProps)(LibraryList);
+
+export {comp1 as LibraryList};
